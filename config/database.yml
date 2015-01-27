@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: yam_inc_development
+  template: template0
+
+test:
+  adapter: postgresql
+  database: yam_inc_test
+  template: template0
