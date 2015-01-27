@@ -7,10 +7,11 @@
 
   <button type="submit">Add employee to this division</button>
 
-  <p>Employees in <%= @division.name() %>'s division</p><ul>
-    <% @employees.each do |employee| %>
+  <p>Employees in <%= @division.name() %>'s division</p>
+  <ul>
+<% @division.employees().each() do |employee| %>
     <li> <%= employee.name() %> </li>
-  <% end %>
-</ul>
-
+<% end %>
+  </ul>
 </form>
+<a class="btn btn-info" href="/" role="button">Back</a>
